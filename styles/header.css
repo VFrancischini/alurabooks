@@ -59,7 +59,8 @@
     display: block;
 }
 
-.container__titulo {
+.container__titulo,
+.opcoes {
     display: none;
 }
 
@@ -78,5 +79,33 @@
 
     .container__titulo--negrito {
         font-weight: 700;
+    }
+
+    .opcoes {
+        display: flex;
+    }
+
+    .opcoes__botao:checked~.lista-menu {
+        display: block;
+        width: auto;
+    }
+
+    .opcoes__botao {
+        display: none;
+    }
+
+    .opcoes__item {
+        padding: 0em 1em;
+        text-transform: uppercase;
+    }
+
+    .opcoes__link {
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .cabecalho__menu-hamburguer,
+    .container__imagem-escondido {
+        display: none;
     }
 }
