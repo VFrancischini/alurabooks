@@ -27,6 +27,7 @@ hr {
 
     .lista-rodape__titulo {
         font-size: 14px;
+        text-transform: uppercase;
         color: var(--cinza-claro);
     }
 
